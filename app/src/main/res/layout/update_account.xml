@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+<ScrollView
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_gravity="center_horizontal"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+    <Button android:id="@+id/buttonUpdate" android:hint="Update" 
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="updateAccount">
+    </Button>        
+    
+    <Button android:id="@+id/buttonDelete" android:hint="Delete" 
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="deleteAccount">
+    </Button>
+     <Button android:id="@+id/buttonListTrans" android:hint="Transactions" 
+          android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="listAccountTransactions">
+    </Button>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editAcno"
+        android:hint="Account Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Number" >
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editCno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <android.support.design.widget.TextInputEditText
+        android:hint="Account Holder(s)"
+        android:id="@+id/editHolders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:hint="Bank Name "
+        android:id="@+id/editBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:hint="Branch Name "
+        android:id="@+id/editBranchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <android.support.design.widget.TextInputEditText
+        android:hint="Branch Address "
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress" />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editIFSC"
+        android:hint="IFSC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editMICR"
+        android:hint="MICR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        
+    </android.support.design.widget.TextInputLayout>
+    
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editBalance"
+        android:layout_width="match_parent"
+        android:hint="Current Balance"
+        android:layout_height="wrap_content"/>
+        
+    </android.support.design.widget.TextInputLayout>
+    
+    
+    <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:hint="Remarks "
+            android:id="@+id/editRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    </android.support.design.widget.TextInputLayout>
+        
+
+  
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

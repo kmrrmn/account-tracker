@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rmn.accounttracker">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:screenOrientation="portrait"
+            android:label="Available Accounts"
+            android:name=".ListAccounts" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddAccount"
+            android:screenOrientation="portrait" android:label="Add New Account"></activity>
+        <activity android:name=".AddTransaction"
+            android:screenOrientation="portrait" android:label="Add New Transaction"></activity>
+        <activity android:name=".UpdateAccount"
+            android:screenOrientation="portrait" android:label="Account Details"></activity>
+        <activity android:name=".ListAccountTransactions"
+            android:screenOrientation="portrait"
+            android:label="Account Transactions"></activity>
+        <activity android:name=".TransactionDetails"
+            android:screenOrientation="portrait" android:label="Transaction Details"></activity>
+        <activity android:name=".SearchTransactions"
+            android:screenOrientation="portrait"   android:label="Search Transactions"></activity>
+        <activity android:name=".ListTransactions"
+            android:screenOrientation="portrait" android:label="Transactions"></activity>
+        <activity android:name=".ListRecentTransactions"
+            android:screenOrientation="portrait" android:label="Recent Transactions"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+        <TableRow >
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deleteTransaction"
+                android:text="Delete" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonAccountDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showAccountDetails"
+                android:text="Account Details" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+
+
+<android.support.v7.widget.CardView
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#468189"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Account Number" />
+
+
+            <TextView
+                android:id="@+id/a6"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a6"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textAcno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Trans Date" />
+
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a5"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textTransDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Trans Type" />
+
+
+            <TextView
+                android:id="@+id/a4"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a4"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textTransType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Amount" />
+
+
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a3"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textTransAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Cheque No" />
+
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a2"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textChequeNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Cheque Party" />
+
+
+            <TextView
+                android:id="@+id/a1"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a1"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textChequeParty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Cheque Details" />
+
+
+            <TextView
+                android:id="@+id/a0"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a0"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textChequeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_gravity="start"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Remarks" />
+
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textTransRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

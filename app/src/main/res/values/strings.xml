@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Accounts Tracker</string>
+    <string name="accountsprompt">Select Account</string>
+
+
+    <string name="openDrawer">OpenDrawer</string>
+    <string name="closeDrawer">CloseDrawer</string>
+
+</resources>

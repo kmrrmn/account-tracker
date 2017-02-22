@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#fff"
+    android:paddingBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<android.support.v7.widget.CardView
+    app:cardElevation="6dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="40dp"
+    app:cardBackgroundColor="#468189"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="19dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textTransId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" 
+        android:text="" />
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+       <TextView
+           android:textSize="19sp"
+           android:textStyle="bold"
+           android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="Account No." />
+
+
+    <TextView
+        android:id="@+id/a6"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:layout_alignLeft="@+id/a6"
+        android:textColor="#AEDCC0"
+        android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textAcno"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="acno" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trans Date" />
+
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a5"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textTransDate"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="transdate" />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        <TextView
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trans Details" />
+
+            <TextView
+                android:id="@+id/a4"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a4"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textTransDetails"
+        android:layout_marginLeft="5dp"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:text="Details" />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trans Type" />
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_alignLeft="@+id/a3"
+                android:textColor="#AEDCC0"
+                android:textSize="19sp"
+         android:layout_alignParentEnd="true"
+        android:id="@+id/textTransType"
+        android:layout_marginLeft="5dp"
+         android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Type" />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trans Amount" />
+
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+    <TextView
+        android:layout_alignLeft="@+id/a2"
+        android:textColor="#AEDCC0"
+        android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textTransAmount"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="amount" />
+  </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remarks " />
+
+            <TextView
+                android:id="@+id/a1"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+    <TextView
+        android:layout_alignLeft="@+id/a1"
+        android:gravity="start"
+        android:textColor="#AEDCC0"
+        android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textTransRemarks"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="remarks" />
+  </RelativeLayout>
+  
+
+
+    </LinearLayout>
+ </android.support.v7.widget.CardView>
+</LinearLayout>
+
+ 

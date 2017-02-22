@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<android.support.v7.widget.Toolbar
+    android:elevation="8dp"
+    android:id="@+id/tool"
+    android:layout_width="match_parent"
+    android:background="#006992"
+    android:layout_height="70dp"
+    app:popupTheme="@style/AppTheme.PopupOverlay" >
+    <com.rmn.accounttracker.CircleImageView
+        android:id="@+id/img"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/header"
+        android:gravity="center"
+        android:text="tool"
+         android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#F3EAF4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+</LinearLayout>
